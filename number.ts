@@ -5,6 +5,12 @@ export class Numero {
         this.numero = numero;
     }
 
+    
+    public get num() : number {
+        return this.numero;
+    }
+    
+
     public sumar(items: number): number {
         return this.numero + items;
     }

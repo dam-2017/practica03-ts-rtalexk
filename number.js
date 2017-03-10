@@ -4,6 +4,13 @@ var Numero = (function () {
     function Numero(numero) {
         this.numero = numero;
     }
+    Object.defineProperty(Numero.prototype, "num", {
+        get: function () {
+            return this.numero;
+        },
+        enumerable: true,
+        configurable: true
+    });
     Numero.prototype.sumar = function (items) {
         return this.numero + items;
     };
